@@ -113,7 +113,6 @@ export default function Lodging() {
     return (
         <>
             <Header />
-            <Footer />
             {/* // Display lodging page when data are retrieved */}
             <main
                 data-testid="lodging"
@@ -207,6 +206,7 @@ export default function Lodging() {
                     />
                 </div>
             </main>
+            <Footer />
         </>
     )
 }
