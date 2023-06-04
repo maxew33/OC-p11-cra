@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    width: 95%;
+    aspect-ratio: 1;
+    border-radius:  var(--border-radius);
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &::after{
+        content:"";
+        position: absolute;
+        background: var(--gradient);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.title {
+    z-index: 10;
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+    width: calc(100% - 1.5rem);
+    line-height: 1.25;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 90%;
+        max-width: 25rem;
+        aspect-ratio: 1.5;
+    }  
+}
+
+
+@media screen and (max-width: 500px
+) {
+    .card {
+        width: 100%;
+        aspect-ratio: 1.3;
+    }  
+}

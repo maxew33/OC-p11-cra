@@ -1,0 +1,78 @@
+@import '../../style/mixins';
+
+.dropdown {
+    // background: red;
+    position: relative;
+    margin: 2rem 0;
+    > * {
+        padding: 1rem 2rem;
+    }
+}
+
+.large {
+    width: 100%;
+    max-width: 64rem;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.medium {
+    width: 48.5%;
+    max-width: 36.5rem;
+    font-size: 1.125rem;
+}
+
+.title {
+    background: var(--maincol);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    color: white;
+    @include flex-c-sb;
+}
+
+.content {
+    display: none;
+    color: var(--maincol);
+    line-height: 1.5;
+    background: var(--lightgrey);
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.open {
+    display: block;
+}
+
+.arrow {
+    transition: transform 0.25s linear;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    .dropdown {
+        margin: 1.25rem 0 0;
+        &:last-child {
+            margin-bottom: 1.25rem;
+        }
+        > * {
+            padding: 0.625rem 0.825rem;
+        }
+    }
+
+    .large,
+    .medium {
+        width: 100%;
+    }
+    .title {
+        font-size: 0.8rem;
+    }
+    .content {
+        font-size: 0.75rem;
+    }
+}

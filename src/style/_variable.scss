@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --maincol: #ff6060;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #f6f6f6;
+    --grey: #e3e3e3;
+    --darkgrey: #c4c4c4;
+    --gradient: linear-gradient(#fff0, #00000050);
+
+    --url: '';
+
+    --border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 500px
+) {
+    :root {
+        --border-radius: 0.625rem;
+    }
+}
